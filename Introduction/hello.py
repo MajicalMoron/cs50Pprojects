@@ -2,7 +2,7 @@
 name = input("what's your name? ") .strip().title()
 
 '''
- Remove blankespace from str and capitalize user's name
+ #Remove blankespace from str and capitalize user's name
 name = name.strip().title()
 '''
 
