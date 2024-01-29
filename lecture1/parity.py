@@ -8,8 +8,11 @@ def main():
 
 # universal function that tells if something is even or odd
 def is_even(n):
-    return True if n % 2 == 0 else False
-    ''' # alternate way of saying the same thing
+    # Most "succinct" way of getting desired outcome
+    return n % 2 == 0
+'''
+    #return True if n % 2 == 0 else False
+# alternate way of saying the same thing
     if n % 2 == 0:
         return True
     else:
