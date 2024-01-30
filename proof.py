@@ -4,29 +4,33 @@ x = int(input("What's x? "))
 y = int(input("What's y? "))
 fn = input("What opperation: ").title
 z = 0
-name1 = "place hold"
-name2 = "place hold"
-name3 = "place hold"
-name4 = "place hold"
 
 opperation = [
-    {"name1": "Multiplication" or "Times" or "Multiply"},
-    {"name2": "Divide" or "Division" or "Over"},
-    {"name3": "Subtract" or "Subtraction" or "Minus" or "Less"},
-    {"name4": "Add" or "Addition" or "Plus"},
+    {"name": "Multiplication" or "Times" or "Multiply"},
+    {"name": "Divide" or "Division" or "Over"},
+    {"name": "Subtract" or "Subtraction" or "Minus" or "Less"},
+    {"name": "Add" or "Addition" or "Plus"},
 ]
 
+
 def equation(fn):
-    if "fn" == opperation["name1"]:
+    if fn == opperation["name"[range()]]:
         z =  x * y
-    elif fn == opperation["name2"]:
+        z = z + " -Multiplication"
+    elif fn == opperation["name",2]:
         z = x / y
-    elif fn == opperation["name3"]:
+        z = z + " -Division"
+    elif fn == opperation["name"]:
         z = x - y
-    elif "fn" == opperation["name4"]:
+        z = z + " -Subtraction"
+    elif "fn" == opperation["name"]:
         z = x + y
+        z = z + " -Addition"
+    else:
+        z = "Your a falure."
     return(z)
     
+
 '''
 def equation(fn):
     if fn == "Multiplication" or fn == "Times":
@@ -38,5 +42,14 @@ def equation(fn):
     elif fn == "Addition" or fn == "Add":
         print(x + y)
 '''
+'''
+# Opperation Transvers
+def opp_tr():
+    for i in range(opperation):
+        if i < range(opperation()):
+
+        print(opperation(i))
+'''
+#opp_tr()
 equation(fn)
 print(z)
