@@ -13,9 +13,12 @@ opperation = [
 ]
 
 # Opperation Transvers
-def opp_tr(p:0, p1:0):
-    for i in range(opperation[p1["name"]]):
-        p = (opperation(i))
+def opp_tr():
+    p = str("place holder")
+    p1 = 0
+    i = 0
+    for i in range(opperation["name":[i]]):
+        p = opperation["name"[i]]
         if fn == p:
             return(p)
         if i < range(opperation(p1)):
@@ -55,6 +58,6 @@ def equation(fn):
 
 
 
-opp_tr()
+print(opp_tr())
 equation(fn)
 print(z)
