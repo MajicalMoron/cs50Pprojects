@@ -12,18 +12,28 @@ opperation = [
     {"name": "Add" or "Addition" or "Plus"},
 ]
 
+# Opperation Transvers
+def opp_tr(p:0, p1:0):
+    for i in range(opperation[p1["name"]]):
+        p = (opperation(i))
+        if fn == p:
+            return(p)
+        if i < range(opperation(p1)):
+            p1 = p1 + 1
+            i = 0
+    
 
-def equation(fn):
-    if fn == opperation["name"[range()]]:
+def equation():
+    if fn == opperation["name"]:
         z =  x * y
         z = z + " -Multiplication"
-    elif fn == opperation["name",2]:
+    elif fn == opperation["name"]:
         z = x / y
         z = z + " -Division"
     elif fn == opperation["name"]:
         z = x - y
         z = z + " -Subtraction"
-    elif "fn" == opperation["name"]:
+    elif "fn" == opperation[opp_tr()]:
         z = x + y
         z = z + " -Addition"
     else:
@@ -42,14 +52,9 @@ def equation(fn):
     elif fn == "Addition" or fn == "Add":
         print(x + y)
 '''
-'''
-# Opperation Transvers
-def opp_tr():
-    for i in range(opperation):
-        if i < range(opperation()):
 
-        print(opperation(i))
-'''
-#opp_tr()
+
+
+opp_tr()
 equation(fn)
 print(z)
