@@ -16,8 +16,8 @@ opperation = [
 def opp_tr():
     p = str("place holder")
     p1 = 0
-    i = 0
-    for i in range(opperation["name":[i]]):
+    #i = 0
+    for i in range(opperation("name"[p1])):
         p = opperation["name"[i]]
         if fn == p:
             return(p)
