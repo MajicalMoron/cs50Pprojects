@@ -3,7 +3,6 @@
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 fn = input("What opperation: ").title
-z = 0
 '''
 opperation = [
     {"name": "Multiplication" or "Times" or "Multiply"},
@@ -13,12 +12,12 @@ opperation = [
 ]'''
 
 # making the array of lists, for each type of (basic) math problem
-opperation = {
-    "mult": "Multiplication" or "Times" or "Multiply",
-    "divi": "Divide" or "Division" or "Over",
-    "sub": "Subtract" or "Subtraction" or "Minus" or "Less",
-    "add": "Add" or "Addition" or "Plus",
-}
+opperation = [
+    "mult": {"Multiplication" or "Times" or "Multiply"},
+    "divi": {"Divide" or "Division" or "Over"},
+    "sub": {"Subtract" or "Subtraction" or "Minus" or "Less"},
+    "add": {"Add" or "Addition" or "Plus"}
+]
 
 # Opperation Transvers
 def opp_tr(p): 
@@ -28,29 +27,30 @@ def opp_tr(p):
             return(r)
 
 # checks if the users input is a usable argument
-if fn == opperation["multi"]:
-    opp_tr("multi")
+if fn == opperation["mult"]:
+    fn = opp_tr("mult")
 elif fn == opperation["divi"]:
-    opp_tr("divi")
+    fn = opp_tr("divi")
 elif fn == opperation["sub"]:
-    opp_tr("sub")
+    fn = opp_tr("sub")
 elif fn == opperation["add"]:
-    opp_tr("add")
-else:
+    fn = opp_tr("add")
+elif fn != opperation:
     print("Your a falure of a person. \n" + "Have a great day!")
 
 # does the actual math problem
 def equation():
-    if fn == opperation["name"]:
+    z = 0
+    if fn == opperation["mult"]:
         z =  x * y
         z = z + " -Multiplication"
-    elif fn == opperation["name"]:
+    elif fn == opperation["divi"]:
         z = x / y
         z = z + " -Division"
-    elif fn == opperation["name"]:
+    elif fn == opperation["sub"]:
         z = x - y
         z = z + " -Subtraction"
-    elif "fn" == opperation[opp_tr()]:
+    elif "fn" == opperation["add"]:
         z = x + y
         z = z + " -Addition"
     else:
@@ -70,6 +70,6 @@ def equation(fn):
         print(x + y)
 '''
 
-opp_tr()
-print(equation(fn))
+
+print(equation())
 
