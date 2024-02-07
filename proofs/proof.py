@@ -40,11 +40,11 @@ def opp_tr(p):
 # checks if the users input is a usable argument
 if fn == opperation[0]:
     fn = opp_tr("mult")
-elif fn == opperation["divi"]:
+elif fn == opperation[1]:
     fn = opp_tr("divi")
-elif fn == opperation["sub"]:
+elif fn == opperation[2]:
     fn = opp_tr("sub")
-elif fn == opperation["add"]:
+elif fn == opperation[3]:
     fn = opp_tr("add")
 elif fn != opperation:
     print("Your a falure of a person. \n" + "Have a great day!")
